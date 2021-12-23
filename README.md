@@ -2,7 +2,7 @@
 
 ## Indicación de las tecnologías empleadas:
 ## Imágenes y vídeos:
-![Lo tradicional llama ](super-mario-bros.jpg)
+![Lo tradicional llama ](./public/img/super-mario-bros.jpg)
 ## Motivación del proyecto:
 La motivación vienen dada del tradicional juego de Super Mario Bros,
 siempre que he recordado un videojuego, me ha venido a la cabeza Mario Bross, he jugado bastante
