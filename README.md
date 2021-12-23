@@ -11,9 +11,10 @@ pero a su vez va a merecer la pena poder emplearle tiempo y a su vez aprender de
 
 ## Estructura del proyecto:
 Acceso directo al juego:
+* [Pincha aquí para poder acceder](http://localhost:1234)
 ## Tabla de contenidos o índice:
 * Personajes:
-    * Mariana
+    * Mariana 
 ## Manual de instalación y deployment:
 Ejemplos de código:
 Entornos de ejecución:
