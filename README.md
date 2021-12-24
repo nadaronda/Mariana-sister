@@ -1,33 +1,56 @@
-## Titulo del Juego: Mariana Sister
+# Mi priemr proyecto:
+# Indice:
+1. Título del Juego
+2. Indicación de las tecnologías empleadas 
+3. Imágenes y vídeos
+4. Motivación del proyecto
+5. Estructura del proyecto
+6. Acceso directo al juego
+7. Tabla de contenidos o índice
+8. Manual de instalación y deployment
+9. Ejemplos de código
+10. Entornos de ejecución
+11. Variables globales
+12. Listado de paquetes y dependencias
+13. Estadísticas
+14. Licencias
+15. Agradecimientos
+16. Otras consideraciones
 
-## Indicación de las tecnologías empleadas:
-## Imágenes y vídeos:
+
+## 1. Titulo del Juego: 
+Mariana Sister
+
+## 2. Indicación de las tecnologías empleadas:
+## 3. Imágenes y vídeos:
 ![Lo tradicional llama ](./public/img/super-mario-bros.jpg)
-## Motivación del proyecto:
+## 4. Motivación del proyecto:
 La motivación vienen dada del tradicional juego de Super Mario Bros,
 siempre que he recordado un videojuego, me ha venido a la cabeza Mario Bross, he jugado bastante
-de pequeña y trae bastantes buenos recuerdos. Ver que es posible poder crearlo desde cero, para mi va a ser una gran meta, 
-pero a su vez va a merecer la pena poder emplearle tiempo y a su vez aprender de ello.
+de pequeña y me trae bastantes buenos recuerdos. Ver que es posible poder crearlo desde cero, para mi sería un gran reto.
 
-## Estructura del proyecto:
-Acceso directo al juego:
+Va a merecer la pena poder emplearle tiempo!!
+
+## 5. Estructura del proyecto:
+## 6. Acceso directo al juego:
 * [Pincha aquí para poder acceder](http://localhost:1234)
-## Tabla de contenidos o índice:
+## 7. Tabla de contenidos o índice:
 * Personajes:
     * Mariana 
-## Manual de instalación y deployment:
-Ejemplos de código:
-Entornos de ejecución:
-Variables globales:
+    * ...!!
+## 8. Manual de instalación y deployment:
+     
+## 9. Ejemplos de código:
+## 10. Entornos de ejecución:
+## 11. Variables globales:
 
-## Listado de paquetes y dependencias:ç
+## 12. Listado de paquetes y dependencias:
 * Node package manager: npm
 * To run the HTML: parcel
-* To run the HTML while working on the project: ts-node-dev
 * Language used typescript
 
 
-## Estadísticas:
-## Licencias
-## Agradecimientos:
-## Otras consideraciones;
+## 13. Estadísticas:
+## 14. Licencias
+## 15. Agradecimientos:
+## 16. Otras consideraciones:
