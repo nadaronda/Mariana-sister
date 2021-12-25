@@ -8,9 +8,13 @@ window.onload = () => {
     setInterval(() => {
         MarianaActor.update();
         ctx.clearRect(0, 0, 500, 500);//limpiar mi canvas
-        console.log("setea un intervalo");
         MarianaActor.draw(ctx);
     }, 1000)
 
+    document.body.addEventListener("keydown", (e) => {
+        //console.log(e.key)Detecto todas las teclas del teclado
+        MarianaActor.keyboard_event(e.key);
+
+    });
 
 }
