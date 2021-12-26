@@ -51,6 +51,7 @@ Va a merecer la pena poder emplearle tiempo!!
 * MDN [Api Canvas](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
 * Css [Información sobre el Modelo de cajas Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
     * Como aprender de manera divertida el modelo de cajas [Juego](https://flexboxfroggy.com/)
+* [Pincha aquí para crear sprite personalizados](https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Humanlike_white)
 
 
 
