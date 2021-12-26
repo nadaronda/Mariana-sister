@@ -24,22 +24,7 @@
 Mariana Sister
 
 ## 2. Indicación de las tecnologías empleadas:
-```
-Clone the repository:
-    git clone https://github.com/nadaronda/Mariana-sister
 
-Initiate npm:
-    npm init
-Or use this instead:
-    npm init -y
-
-Install dependencies:
-    npm install
-
-Execute the project:
-    npm run dev
-
-```
 ## 3. Imágenes y vídeos:
 ![Lo tradicional llama ](./public/img/super-mario-bros.jpg)
 ## 4. Motivación del proyecto:
@@ -57,7 +42,22 @@ Va a merecer la pena poder emplearle tiempo!!
     * Mariana 
     * ...??
 ## 8. Manual de instalación y deployment:
-     
+```
+Clone the repository:
+    git clone https://github.com/nadaronda/Mariana-sister
+
+Initiate npm:
+    npm init
+Or use this instead:
+    npm init -y
+
+Install dependencies:
+    npm install
+
+Execute the project:
+    npm run dev
+
+``` 
 ## 9. Ejemplos de código:
 ## 10. Entornos de ejecución:
 ## 11. Variables globales:
