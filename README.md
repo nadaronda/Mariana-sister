@@ -1,6 +1,6 @@
-# Mi priemr proyecto:
+# Mi primer proyecto de [Core Code School](https://www.corecode.school/)
 # Indice:
-- [Mi priemr proyecto:](#mi-priemr-proyecto)
+- [Mi primer proyecto de Core Code School](#mi-primer-proyecto-de-core-code-school)
 - [Indice:](#indice)
   - [1. Título del Juego:](#1-título-del-juego)
   - [2. Indicación de las tecnologías empleadas:](#2-indicación-de-las-tecnologías-empleadas)
