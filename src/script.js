@@ -8,7 +8,9 @@ window.onload = () => {
     let actors = [
         fps,
         new actor({ x: 0, y: 490 }, "purple", 10),//Mariana
-        new actorEvil({ x: 500, y: 490 }, "red", 10),// malo
+        new actorEvil({ x: 500, y: 490 }, "red", speed = 0.9),// malo
+        new actorEvil({ x: 500, y: 490 }, "blue", speed = 0.5),// malo
+        new actorEvil({ x: 500, y: 490 }, "grey", speed = 0.3),// malo
     ];
 
     let lastFrame = 0;

@@ -14,7 +14,15 @@ window.onload = ()=>{
         new actorEvil({
             x: 500,
             y: 490
-        }, "red", 10)
+        }, "red", speed = 0.9),
+        new actorEvil({
+            x: 500,
+            y: 490
+        }, "blue", speed = 0.5),
+        new actorEvil({
+            x: 500,
+            y: 490
+        }, "grey", speed = 0.3)
     ];
     let lastFrame = 0;
     const render = (time)=>{
