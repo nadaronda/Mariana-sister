@@ -10,7 +10,11 @@ window.onload = ()=>{
         new actor({
             x: 0,
             y: 490
-        }, "purple", 10)
+        }, "purple", 10),
+        new actorEvil({
+            x: 500,
+            y: 490
+        }, "red", 10)
     ];
     let lastFrame = 0;
     const render = (time)=>{
