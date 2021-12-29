@@ -18,6 +18,17 @@
   - [14. Licencias](#14-licencias)
   - [15. Agradecimientos:](#15-agradecimientos)
   - [16. Otras consideraciones:](#16-otras-consideraciones)
+   
+  - [7. Tabla de contenidos o índice:](#7-tabla-de-contenidos-o-índice)
+  - [8. Manual de instalación y deployment:](#8-manual-de-instalación-y-deployment)
+  - [9. Ejemplos de código:](#9-ejemplos-de-código)
+  - [10. Entornos de ejecución:](#10-entornos-de-ejecución)
+  - [11. Variables globales:](#11-variables-globales)
+  - [12. Listado de paquetes y dependencias:](#12-listado-de-paquetes-y-dependencias)
+  - [13. Estadísticas:](#13-estadísticas)
+  - [14. Licencias](#14-licencias)
+  - [15. Agradecimientos:](#15-agradecimientos)
+  - [16. Otras consideraciones:](#16-otras-consideraciones)
 
 
 ## 1. Título del Juego:
@@ -36,7 +47,16 @@ Va a merecer la pena poder emplearle tiempo!!
 
 ## 5. Estructura del proyecto:
 ## 6. Acceso directo al juego:
-* [Pincha aquí para poder acceder](http://localhost:1234)
+* [Pincha aquí para poder acceder](https://nadaronda.github.io/Mariana-sister/)
+  
+* El juego de Mariana Sister se basa en el juego de Super Mario Bros, los comandos son los siguientes:
+  
+     - La flecha de derecha es para desplazarnos a la derecha.
+     - La flecha de izquierda es para desplazarnos a la izquierda.
+     - La flecha de arriba es para subir escaleras,o levantar brazos.(falta por hacer)
+     - La flecha de abajo baja escalera y se agacha(falta por hacer).
+     - La barra de espacio se utiliza para saltar(En proceso).
+     - El objetivo del juego es llegar a la meta antes de que termine el tiempo definido en la esquina superior dercha(falta por hacer), sin que le maten.
 ## 7. Tabla de contenidos o índice:
 * Personajes:
     * Mariana 
@@ -48,6 +68,7 @@ Clone the repository:
 
 Initiate npm:
     npm init
+    
 Or use this instead:
     npm init -y
 
