@@ -37,7 +37,7 @@ Mariana Sister
 ## 2. Indicación de las tecnologías empleadas:
 
 ## 3. Imágenes y vídeos:
-![Lo tradicional llama ](./public/img/super-mario-bros.jpg)
+![Lo tradicional llama ](./img/super-mario-bros.jpg)
 ## 4. Motivación del proyecto:
 La motivación vienen dada del tradicional juego de Super Mario Bros,
 siempre que he recordado un videojuego, me ha venido a la cabeza Mario Bross, he jugado bastante
@@ -68,7 +68,7 @@ Clone the repository:
 
 Initiate npm:
     npm init
-    
+
 Or use this instead:
     npm init -y
 
