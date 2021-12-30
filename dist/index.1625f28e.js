@@ -5,24 +5,25 @@ window.onload = ()=>{
         x: 5,
         y: 15
     }, "black");
+    let mariana = new actor({
+        x: 0,
+        y: 490
+    }, "purple", speed = 10); //Mariana
     let actors = [
         fps,
-        new actor({
-            x: 0,
-            y: 490
-        }, "purple", 10),
+        mariana,
         new actorEvil({
             x: 500,
             y: 490
-        }, "red", speed = 0.9),
+        }, "red", speed = 0.9, mariana),
         new actorEvil({
             x: 500,
             y: 490
-        }, "blue", speed = 0.5),
+        }, "blue", speed = 0.5, mariana),
         new actorEvil({
             x: 500,
             y: 490
-        }, "grey", speed = 0.3)
+        }, "grey", speed = 0.3, mariana)
     ];
     let lastFrame = 0;
     const render = (time)=>{

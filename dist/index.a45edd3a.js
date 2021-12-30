@@ -1,12 +1,12 @@
 class actor {
-    constructor(initialPos, color = "purple", Speed = 10){
+    constructor(initialPos, color = "purple", speed = 10){
         this.origin = {
             x: initialPos.x,
             y: initialPos.y
         };
         this.color = color;
         // this.maxSpeed = maxSpeed;
-        this.speed = 10;
+        this.speed = speed;
         //this.speed = { x: maxSpeed, y: 0 };
         this.saltando = false; //estado espacio falso no pulsado
     }
