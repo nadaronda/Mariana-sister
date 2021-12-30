@@ -3,7 +3,7 @@ class actorEvil {
         this.origin = { x: initialPos.x, y: initialPos.y };
         this.color = color;
         this.speed = speed;
-        this.actor = actor;//add  this.origin = { x: initialPos.x, y: initialPos.y };
+        this.actor = actor;//add  this.origin = { x: initialPos.x, y: initialPos.y };de mi actor mariana
 
     }
     update() {
@@ -16,7 +16,7 @@ class actorEvil {
         let myPos = this.origin;
         let distance = Math.sqrt(Math.pow(myPos.x - this.actor.origin.x, 2) + Math.pow(myPos.y - this.actor.origin.y, 2));
         console.log(distance);
-        if (distance <= 10 && this.actor.origin.y >= 490) { alert("tocado") }
+        if (distance <= 5 && this.actor.origin.y >= 490) { alert(" Game Over ") }
     }
     keyboard_event() { }
     draw(delta, ctx) {
