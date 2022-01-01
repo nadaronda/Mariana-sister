@@ -1,4 +1,4 @@
-17016
+17018
 64C:\Users\rosar\Desktop\Mariana-sister\node_modules\async-limiter132847553592917279 1
 82C:\Users\rosar\Desktop\Mariana-sister\node_modules\highlight.js\lib\languages\c.js132847554212603011 0
 71C:\Users\rosar\Desktop\Mariana-sister\node_modules\nanoid\index.prod.js132847553869388787 0
@@ -52,7 +52,7 @@
 108C:\Users\rosar\Desktop\Mariana-sister\node_modules\terser\node_modules\source-map\lib\source-map-consumer.js132847553880068786 0
 58C:\Users\rosar\Desktop\Mariana-sister\node_modules\yallist132847553539218128 1
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webhid.js132847554523692395 0
-50C:\Users\rosar\Desktop\Mariana-sister\package.json132855386963965234 0
+50C:\Users\rosar\Desktop\Mariana-sister\package.json132855480663395153 0
 107C:\Users\rosar\Desktop\Mariana-sister\node_modules\postcss-modules-extract-imports\node_modules\ansi-styles132847553522716737 1
 71C:\Users\rosar\Desktop\Mariana-sister\node_modules\path-browserify\test132847553880128762 1
 83C:\Users\rosar\Desktop\Mariana-sister\node_modules\core-js\es\array\virtual\some.js132847554755015253 0
@@ -114,7 +114,7 @@
 90C:\Users\rosar\Desktop\Mariana-sister\node_modules\es-abstract\2017\OrdinaryToPrimitive.js132847554456702439 0
 59C:\Users\rosar\Desktop\Mariana-sister\node_modules\escalade132847553809167822 1
 97C:\Users\rosar\Desktop\Mariana-sister\node_modules\jsdom\lib\jsdom\living\generated\ShadowRoot.js132847554293640952 0
-42C:\Users\rosar\Desktop\Mariana-sister\dist132855441415369936 1
+42C:\Users\rosar\Desktop\Mariana-sister\dist132855480860002898 1
 82C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\regions\CO.js132847554203067112 0
 72C:\Users\rosar\Desktop\Mariana-sister\node_modules\util\support\types.js132847553725539575 0
 122C:\Users\rosar\Desktop\Mariana-sister\node_modules\postcss-modules-extract-imports\node_modules\postcss\lib\lazy-result.js132847553966176375 0
@@ -158,7 +158,7 @@
 55C:\Users\rosar\Desktop\Mariana-sister\node_modules\.bin132855379595225380 1
 66C:\Users\rosar\Desktop\Mariana-sister\node_modules\postcss-modules132847553850483641 1
 69C:\Users\rosar\Desktop\Mariana-sister\node_modules\lodash\fp\assoc.js132847554321890065 0
-48C:\Users\rosar\Desktop\Mariana-sister\index.html132855441411964560 0
+48C:\Users\rosar\Desktop\Mariana-sister\index.html132855478675429212 0
 85C:\Users\rosar\Desktop\Mariana-sister\node_modules\relateurl\lib\relate\absolutize.js132847553873528770 0
 97C:\Users\rosar\Desktop\Mariana-sister\node_modules\core-js\internals\well-known-symbol-wrapped.js132847554802346143 0
 78C:\Users\rosar\Desktop\Mariana-sister\node_modules\core-js\es\object\assign.js132847554183891509 0
@@ -15577,6 +15577,7 @@
 76C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\src\requests132847554268230988 1
 91C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\web-serial.js132847554522341944 0
 90C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\web-share.js132847554522661939 0
+91C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE\workflows\deploy-gh-pages.yaml132855478081726637 0
 85C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webm.js132847554524022382 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webusb.js132847554525028031 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webvtt.js132847554525448030 0
@@ -17010,8 +17011,9 @@
 64C:\Users\rosar\Desktop\Mariana-sister\dist\index.abe0c6a4.js.map132855441086936981 0
 61C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css132855441085056981 0
 65C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css.map132855441086936981 0
-53C:\Users\rosar\Desktop\Mariana-sister\dist\index.html132855441415347455 0
+53C:\Users\rosar\Desktop\Mariana-sister\dist\index.html132855480859972898 0
 61C:\Users\rosar\Desktop\Mariana-sister\dist\public.a7cde9f3.js132847556127094500 0
 65C:\Users\rosar\Desktop\Mariana-sister\dist\public.a7cde9f3.js.map132847556128217373 0
 59C:\Users\rosar\Desktop\Mariana-sister\.vscode\settings.json132848127855877794 0
-60C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE132847577652582614 1
+60C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE132855477023022059 1
+70C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE\workflows132855477512926707 1
