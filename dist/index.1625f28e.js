@@ -21,6 +21,9 @@ window.onload = ()=>{
             y: 490
         }, "blue", speed = 0.7, mariana)
     ];
+    actors.forEach((a)=>a.initialize && a.initialize()
+    ); //para los sprites
+    //tengo que crear un array de actores evil donde les meto el actor mariana 
     let lastFrame = 0;
     const render = (time)=>{
         let delta = (time - lastFrame) / 1000;

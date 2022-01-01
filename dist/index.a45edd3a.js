@@ -9,6 +9,14 @@ class actor {
         this.saltando = false; //estado espacio falso no pulsado
         this.altura = 420;
     }
+    //add funcion
+    initialize() {
+        let marianaSister_png = new image();
+        marianaSister_png.src = marina_spritesheet;
+        marianaSister_png.onload = ()=>{
+            console.log("imagen cargada");
+        };
+    }
     update(delta) {
         /*let newPosX = this.origin.x - this.speed.x;
         let newPosY = 0;
