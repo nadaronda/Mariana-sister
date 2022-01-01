@@ -2,7 +2,6 @@
   "name": "mariana-sister",
   "version": "1.0.0",
   "description": "![Lo tradicional llama ](super-mario-bros.jpg)\r ## Motivación del proyecto:\r La motivación vienen dada del tradicional juego de Super Mario Bros,\r siempre que he recordado un videojuego, me ha venido a la cabeza Mario Bross, he jugado bastante\r de pequeña y trae bastantes buenos recuerdos. Ver que es posible poder crearlo desde cero, para mi va a ser una gran meta, \r pero a su vez va a merecer la pena poder emplearle tiempo y a su vez aprender de ello.",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "npm run clean && npm run ghbuild",
@@ -13,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/nadaronda/Mariana-sister.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
