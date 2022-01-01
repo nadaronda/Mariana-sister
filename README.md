@@ -87,9 +87,9 @@ Execute the project:
 ## 12. Listado de paquetes y dependencias:
 * Node package manager: [npm](https://www.npmjs.com/)
 * To run the HTML: [parcel](https://www.npmjs.com/package/parcel ), [más información](https://parceljs.org/languages/javascript/#classic-scripts)
-* Language used [typescript](https://www.npmjs.com/package/typescript)
-*  [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
-*  Lenguajes de programación:[typescript](https://www.npmjs.com/package/typescript)
+
+*  Lenguajes de programación: [typescript](https://www.npmjs.com/package/typescript)
+*  Otros paquetes de Node: [rimraf](https://www.npmjs.com/package/rimraf), [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
 * MDN [Api Canvas](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
 * Css [Información sobre el Modelo de cajas Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
     * Como aprender de manera divertida el modelo de cajas [Juego](https://flexboxfroggy.com/)

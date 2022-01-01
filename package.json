@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "npm run clean && npm run ghbuild",
-    "ghbuild": "parcel build --dist-dir docs --public-url /dungeon index.html",
+    "ghbuild": "parcel build --dist-dir docs --public-url /mariana-sister index.html",
     "clean": "rimraf docs dist"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/nadaronda/Mariana-sister#readme",
   "dependencies": {
     "parcel": "^2.0.1",
+    "rimraf": "^3.0.2",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.4"
   }
