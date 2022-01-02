@@ -41,7 +41,7 @@
 121C:\Users\rosar\Desktop\Mariana-sister\node_modules\uncss\node_modules\postcss-selector-parser\dist\selectors\universal.js132847554082140792 0
 69C:\Users\rosar\Desktop\Mariana-sister\node_modules\which\package.json132847553555537912 0
 72C:\Users\rosar\Desktop\Mariana-sister\node_modules\node-forge\lib\tls.js132847554119412398 0
-45C:\Users\rosar\Desktop\Mariana-sister\.github132847577652562619 1
+45C:\Users\rosar\Desktop\Mariana-sister\.github132856252938214799 1
 77C:\Users\rosar\Desktop\Mariana-sister\node_modules\lmdb-store\test\threads.js132847554235619035 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\stylehacks\dist\plugins\bodyEmpty.js132847553541018118 0
 69C:\Users\rosar\Desktop\Mariana-sister\node_modules\lodash\fp\rearg.js132847554518531466 0
@@ -15575,7 +15575,6 @@
 76C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\src\requests132847554268230988 1
 91C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\web-serial.js132847554522341944 0
 90C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\web-share.js132847554522661939 0
-91C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE\workflows\deploy-gh-pages.yaml132856226244375401 0
 85C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webm.js132847554524022382 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webusb.js132847554525028031 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\features\webvtt.js132847554525448030 0
@@ -16186,6 +16185,7 @@
 110C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-babel\node_modules\json5\lib\index.d.ts132847553959656380 0
 108C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-babel\node_modules\json5\lib\index.js132847553822053686 0
 112C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-babel\node_modules\json5\lib\unicode.d.ts132847553967696368 0
+76C:\Users\rosar\Desktop\Mariana-sister\.github\workflows\deploy-gh-pages.yaml132856253334551601 0
 124C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-alias\bar.js132847553854623636 0
 109C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-babel\node_modules\json5\lib\util.d.ts132847553970746366 0
 104C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-babel\node_modules\.bin\json5.ps1132847554808031679 0
@@ -16320,6 +16320,7 @@
 94C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\package-manager\src\NodeResolver.js132847553991472139 0
 98C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\package-manager\src\NodeResolverSync.js132847553998802129 0
 85C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\package-manager\src\Npm.js132847554006122571 0
+55C:\Users\rosar\Desktop\Mariana-sister\.github\workflows132855477512926707 1
 86C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\package-manager\src\Pnpm.js132847554014986300 0
 100C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\package-manager\src\promiseFromProcess.js132847554027159943 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\package-manager\src\types.js132847554041833140 0
@@ -17006,5 +17007,4 @@
 65C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css.map132856239472962766 0
 53C:\Users\rosar\Desktop\Mariana-sister\dist\index.html132856239472802762 0
 59C:\Users\rosar\Desktop\Mariana-sister\.vscode\settings.json132848127855877794 0
-60C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE132855477023022059 1
-70C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE\workflows132855477512926707 1
+60C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE132856252938214799 1
