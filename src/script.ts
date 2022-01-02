@@ -15,14 +15,14 @@ window.onload = () => {
     let actors: Array<IActor> = [
         fps,
         mariana,//Mariana 
-        new actorEvil({ x: 500, y: 490 }, "red", speed = 1, mariana),// malo
-        new actorEvil({ x: 500, y: 490 }, "blue", speed = 0.7, mariana),// malo
+        new actorEvil({ x: 500, y: 490 }, "red", mariana),// malo
+        new actorEvil({ x: 500, y: 490 }, "blue", mariana),// malo
         //new actorEvil({ x: 500, y: 490 }, "grey", speed = 0.5, mariana),// malo
     ];
     //actors.forEach((a) => a.initialize && a.initialize());//para los sprites
     //tengo que crear un array de actores evil donde les meto el actor mariana 
     let lastFrame = 0;
-    const render = (time) => {
+    const render = (time: number) => {
 
         let delta = (time - lastFrame) / 1000;
         lastFrame = time;

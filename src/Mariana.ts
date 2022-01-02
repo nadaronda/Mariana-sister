@@ -7,7 +7,7 @@ export class Mariana extends Actor implements IActor {
     speed: number;
     saltando: boolean;
     altura: number;
-    constructor({ initialPos, color = "purple", speed = 10 }: { initialPos; color?: string; speed?: number; }) {
+    constructor({ initialPos, color = "purple", speed = 10 }: { initialPos: Point; color?: string; speed?: number; }) {
         super();
         this.origin = { x: initialPos.x, y: initialPos.y };
         this.color = color;
@@ -21,7 +21,7 @@ export class Mariana extends Actor implements IActor {
         marianaSister_png.src = marina_spritesheet;
         marianaSister_png.onload = () => { console.log("imagen cargada") };
     }*/
-    update(delta) {
+    update(delta: number) {
         /*let newPosX = this.origin.x - this.speed.x;
         let newPosY = 0;
         if (newPosX < 500 && newPosX >= 0) {
@@ -45,7 +45,7 @@ export class Mariana extends Actor implements IActor {
 
     }
 
-    keyboard_event(key) {
+    keyboard_event(key: string) {
         switch (key) {
             case "ArrowRight":
                 console.log("right");
@@ -74,7 +74,7 @@ export class Mariana extends Actor implements IActor {
                 break;
         }
     }
-    draw(delta, ctx) {
+    draw(delta: number, ctx: CanvasRenderingContext2D) {
         let origin = this.origin;//add salto
         ctx.fillStyle = 'purple';
         ctx.fillRect(origin.x, origin.y, 10, 10);

@@ -4,7 +4,7 @@ import { Point } from "./Point";
 export interface IActor {
     origin: Point;
     position: Point;
-    speed: number;
+    speed?: number;
     update: (delta: number) => void;
     keyboard_event: (key: string) => void;
     keyboard_event_down?: (key: string) => void;
@@ -15,7 +15,6 @@ export interface IActor {
 export class Actor implements IActor {
     origin!: Point;
     position!: Point;
-    speed: number;
     contructor(origin: Point) {
         this.origin = origin;
     }

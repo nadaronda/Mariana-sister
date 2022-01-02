@@ -8,13 +8,14 @@ export class actorEvil extends Actor implements IActor {
     saltando: boolean;
     altura: number;
     actor: any;// definir que es
-    constructor(initialPos: Point, color: string, speed: number, actor: any/*cambiar el any*/) {
+    constructor(initialPos: Point, color: string, actor: any/*cambiar el any*/) {
         super();
         this.origin = { x: initialPos.x, y: initialPos.y };
         this.color = color;
-        this.speed = speed;
+        this.speed = 1;
         this.actor = actor;//add  this.origin = { x: initialPos.x, y: initialPos.y };de mi actor mariana
-
+        this.saltando = false;
+        this.altura = 450;
     }
     update() {
         this.origin.x -= this.speed
@@ -28,7 +29,7 @@ export class actorEvil extends Actor implements IActor {
         if (distance <= 5 && this.actor.origin.y >= 490) { alert(" Game Over ") }
     }
     keyboard_event() { }
-    draw(delta, ctx) {
+    draw(delta: number, ctx: CanvasRenderingContext2D) {
         let origin = this.origin;//add salto
         ctx.fillStyle = this.color;
         ctx.fillRect(origin.x, origin.y, 10, 10);
