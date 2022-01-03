@@ -3,6 +3,7 @@ import { Point } from "./types/Point";
 import { FPSviewer } from "./FPSviewer";
 import { Mariana } from "./Mariana";
 import { actorEvil } from "./actorEvil";
+import { Map } from "../src/Map";
 window.onload = () => {
 
 
@@ -11,8 +12,11 @@ window.onload = () => {
 
     let fps = new FPSviewer({ x: 5, y: 15 }, "black");
     let mariana = new Mariana({ initialPos: { x: 1, y: 490 }, color: "purple", speed: 10 });//Mariana
+    let escenario = new Map();
+
 
     let actors: Array<IActor> = [
+        escenario,
         fps,
         mariana,//Mariana 
         new actorEvil({ x: 500, y: 490 }, "red", mariana),// malo
@@ -36,8 +40,27 @@ window.onload = () => {
     }
 
     window.requestAnimationFrame(render);
+
     document.body.addEventListener("keydown", (e) => {
         actors.forEach((actor) => { actor.keyboard_event(e.key) });
+    });
+
+    /*document.body.addEventListener("keydown", (e) => {
+        // console.log(e.key);
+        actors.forEach((actor) => {
+            if (actor.keyboard_event_down) {
+                actor.keyboard_event_down(e.key);
+            }
+        });
+    });*/
+
+    document.body.addEventListener("keyup", (e) => {
+        // console.log(e.key);
+        actors.forEach((actor) => {
+            if (actor.keyboard_event_up) {
+                actor.keyboard_event_up(e.key);
+            }
+        });
     });
 
 }

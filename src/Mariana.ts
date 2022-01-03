@@ -22,17 +22,30 @@ export class Mariana extends Actor implements IActor {
         marianaSister_png.onload = () => { console.log("imagen cargada") };
     }*/
     update(delta: number) {
-        /*let newPosX = this.origin.x - this.speed.x;
-        let newPosY = 0;
-        if (newPosX < 500 && newPosX >= 0) {
-            this.origin.x = newPosX;
 
-        }*/
+
+        let newPosX = this.origin.x;
+        if (newPosX < 490 && newPosX > 10) {
+            this.speed = 10;
+
+        } else { this.speed = 5 }
+        /*
+        let newPosY = this.position.y + this.speed.y;
+        this.position.y = newPosY;
+        if(newPosY < 540){
+          this.speed.y += 1.8*0.4;
+        }
+        if (newPosY >= 540) {
+          this.jumping = false;
+          newPosY = 540;
+          this.speed.y = 0;
+        }
+            
+            */
 
         if (this.saltando) {
             this.origin.y -= 1
         }
-
         if (this.origin.y == this.altura && this.saltando == true) {
             for (let i = this.altura; i <= 490; i++) {
                 this.origin.y = i;
@@ -44,12 +57,20 @@ export class Mariana extends Actor implements IActor {
 
 
     }
+    keyboard_event_up(key: string) {//add
+        switch (key) {
+            case " ":
+                console.log("saltando");
+
+                break;
+        }
+    }
 
     keyboard_event(key: string) {
         switch (key) {
             case "ArrowRight":
                 console.log("right");
-                this.origin.x = (this.origin.x + this.speed) % 500;
+                this.origin.x = (this.origin.x + this.speed);
 
 
                 break;
