@@ -11,7 +11,7 @@ window.onload = () => {
     var ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
 
     let fps = new FPSviewer({ x: 5, y: 15 }, "black");
-    let mariana = new Mariana({ initialPos: { x: 1, y: 490 }, color: "purple", speed: 10 });//Mariana
+    let mariana = new Mariana({ initialPos: { x: 1, y: 384 }, color: "purple", speed: 10 });//Mariana
     let escenario = new Map();
 
 
@@ -19,21 +19,26 @@ window.onload = () => {
         escenario,
         fps,
         mariana,//Mariana 
-        new actorEvil({ x: 500, y: 490 }, "red", mariana),// malo
-        new actorEvil({ x: 500, y: 490 }, "blue", mariana),// malo
+        new actorEvil({ x: 500, y: 384 }, "red", mariana),// malo
+        //  new actorEvil({ x: 500, y: 490 }, "blue", mariana),// malo
         //new actorEvil({ x: 500, y: 490 }, "grey", speed = 0.5, mariana),// malo
     ];
-    //actors.forEach((a) => a.initialize && a.initialize());//para los sprites
+    actors.forEach((a) => a.initialize && a.initialize());//para los sprites
     //tengo que crear un array de actores evil donde les meto el actor mariana 
+
+
+    //bucle de renderizado
     let lastFrame = 0;
     const render = (time: number) => {
 
         let delta = (time - lastFrame) / 1000;
         lastFrame = time;
         actors.forEach(e => e.update(delta));
-        ctx.clearRect(0, 0, 500, 500);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         actors.forEach((e) => {
+            ctx.save();//add
             e.draw(delta, ctx);
+            ctx.restore();//add
         });
 
         window.requestAnimationFrame(render);

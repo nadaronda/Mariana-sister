@@ -15,18 +15,19 @@ export class actorEvil extends Actor implements IActor {
         this.speed = 1;
         this.actor = actor;//add  this.origin = { x: initialPos.x, y: initialPos.y };de mi actor mariana
         this.saltando = false;
-        this.altura = 450;
+        this.altura = 370;
     }
     update() {
         this.origin.x -= this.speed
-        this.origin.y = 490
+        this.origin.y = 390
         let actorPos = this.actor.origin;
 
 
         let myPos = this.origin;
         let distance = Math.sqrt(Math.pow(myPos.x - this.actor.origin.x, 2) + Math.pow(myPos.y - this.actor.origin.y, 2));
-        //console.log(distance);
-        if (distance <= 5 && this.actor.origin.y >= 490) { alert(" Game Over ") }
+        console.log(distance);
+        console.log(actorPos);
+        if (distance <= 10 && this.actor.origin.y >= 384) { alert(" Game Over ") }
     }
     keyboard_event() { }
     draw(delta: number, ctx: CanvasRenderingContext2D) {

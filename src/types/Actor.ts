@@ -6,6 +6,7 @@ export interface IActor {
     position: Point;
     speed?: number;
     update: (delta: number) => void;
+    initialize?: () => void;
     keyboard_event: (key: string) => void;
     keyboard_event_down?: (key: string) => void;
     keyboard_event_up?: (key: string) => void;
