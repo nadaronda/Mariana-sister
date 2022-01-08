@@ -1,7 +1,7 @@
 import { IActor, Actor, Size } from "./types/Actor";
 import { Point } from "./types/Point"
 import { checkLimits } from "./types/checkLimits";//buscar para que vale
-import Mariana_sprites_derecha from "../img/andar_derc.png";
+import Mariana_sprites from "../img/andar.png";
 //import Mariana_sprites_izquierda from "../img/andar_izq.png";
 export class Mariana extends Actor implements IActor {
     origin: Point;
@@ -9,7 +9,7 @@ export class Mariana extends Actor implements IActor {
     speed: number;
     saltando: boolean;
     altura: number;
-    mariana_img_derc: HTMLImageElement;//preguntar public
+    mariana_img: HTMLImageElement;//preguntar public
     //mariana_img_izq: HTMLImageElement;
     frame_count = 0;
     constructor({ initialPos, color = "purple", speed = 10 }: { initialPos: Point; color?: string; speed?: number; }) {
@@ -20,8 +20,8 @@ export class Mariana extends Actor implements IActor {
         this.saltando = false;//estado espacio falso no pulsado
         this.altura = 330;// la altura linea suelo es 384 y
         this.frame_count = 0;
-        this.mariana_img_derc = new Image();
-        this.mariana_img_derc.src = Mariana_sprites_derecha;
+        this.mariana_img = new Image();
+        this.mariana_img.src = Mariana_sprites;
         //this.mariana_img_izq = new Image();
         //this.mariana_img_izq.src = Mariana_sprites_izquierda;
 
@@ -29,7 +29,7 @@ export class Mariana extends Actor implements IActor {
     update(delta: number) {
         let newPosX = this.origin.x;
         if (newPosX < 490 && newPosX > 10) {
-            this.speed = 10;
+            // this.speed = 10;
 
         }
         let newPosY = this.origin.y;
@@ -58,27 +58,37 @@ export class Mariana extends Actor implements IActor {
 
 
     draw(delta: number, ctx: CanvasRenderingContext2D) {
-        //let origin = this.origin;//add salto
-        const Mariana_frames_andar_derc = [
-            //Movimiento Andar a la derecho
-            { origin: { x: 0, y: 5 }, size: { x: 60, y: 50 } },// 1ºPOSICION
-            { origin: { x: 66, y: 5 }, size: { x: 60, y: 50 } },//2ºPOSICION
-            { origin: { x: 128, y: 5 }, size: { x: 60, y: 50 } },//3ºPOSICION
-            { origin: { x: 193, y: 5 }, size: { x: 60, y: 50 } },//4ºPOSICION
-            { origin: { x: 256, y: 5 }, size: { x: 60, y: 50 } },//5ºPOSICION
-            { origin: { x: 320, y: 5 }, size: { x: 60, y: 50 } },//6ºPOSICION
-            { origin: { x: 386, y: 5 }, size: { x: 60, y: 50 } },//7ºPOSICION
-            { origin: { x: 450, y: 5 }, size: { x: 60, y: 50 } },//8ºPOSICION
-            //-------------
 
-            //{ src_origin: { x: 450, y: 5 }, size: { x: 60, y: 50 } },
+        const Mariana_frames_andar_derc = [
+            { origin: { x: 0, y: 199 }, size: { x: 60, y: 50 } },// 1ºPOSICION
+            { origin: { x: 66, y: 199 }, size: { x: 60, y: 50 } },//2ºPOSICION
+            { origin: { x: 128, y: 199 }, size: { x: 60, y: 50 } },//3ºPOSICION
+            { origin: { x: 193, y: 199 }, size: { x: 60, y: 50 } },//4ºPOSICION
+            { origin: { x: 256, y: 199 }, size: { x: 60, y: 50 } },//5ºPOSICION
+            { origin: { x: 320, y: 199 }, size: { x: 60, y: 50 } },//6ºPOSICION
+            { origin: { x: 386, y: 199 }, size: { x: 60, y: 50 } },//7ºPOSICION
+            { origin: { x: 450, y: 199 }, size: { x: 60, y: 50 } },//8ºPOSICION
+
         ];
-        if (this.origin.x > 0 || this.origin.x < 500) {
+        const Mariana_frames_andar_izq = [
+            { origin: { x: 0, y: 71 }, size: { x: 60, y: 50 } },// 1ºPOSICION
+            { origin: { x: 66, y: 71 }, size: { x: 60, y: 50 } },//2ºPOSICION
+            { origin: { x: 128, y: 71 }, size: { x: 60, y: 50 } },//3ºPOSICION
+            { origin: { x: 193, y: 71 }, size: { x: 60, y: 50 } },//4ºPOSICION
+            { origin: { x: 256, y: 71 }, size: { x: 60, y: 50 } },//5ºPOSICION
+            { origin: { x: 320, y: 71 }, size: { x: 60, y: 50 } },//6ºPOSICION
+            { origin: { x: 386, y: 71 }, size: { x: 60, y: 50 } },//7ºPOSICION
+            { origin: { x: 450, y: 71 }, size: { x: 60, y: 50 } },//8ºPOSICION
+
+        ];
+
+
+        if (this.speed >= 10) {
             let i = Math.floor(this.frame_count * 5);
             let frame = Mariana_frames_andar_derc[i % Mariana_frames_andar_derc.length];
             let scale = 1;
             ctx.drawImage(
-                this.mariana_img_derc,//.mariana_img_izq,//
+                this.mariana_img,//.mariana_img_izq,//
                 frame.origin.x,
                 frame.origin.y,
                 frame.size.x,
@@ -88,14 +98,36 @@ export class Mariana extends Actor implements IActor {
                 frame.size.x * scale,
                 frame.size.y * scale
             );
+            ctx.restore();
+            this.frame_count += delta;
+
+        } else if (this.speed < 0) {
+            console.log("hols adwde");
+            let scale = 1;
+            let i = Math.floor(this.frame_count * 5);
+            let frame = Mariana_frames_andar_izq[i % Mariana_frames_andar_izq.length]
+            ctx.drawImage(
+                this.mariana_img,
+                frame.origin.x,
+                frame.origin.y,
+                frame.size.x,//
+                frame.size.y,
+                this.origin.x,//variable x
+                this.origin.y,//variable Y mirar posicion que  le pongo en el map
+                frame.size.x * scale,
+                frame.size.y * scale,
+            )
+            ctx.restore();
+            this.frame_count += delta;
+
         }
-        if (this.mariana_img_derc) {
+        /*if (this.mariana_img) {
             // https://developer.mozilla.org/es/docs/Web/API/CanvasRenderingContext2D/drawImage
             let i = Math.floor(this.frame_count * 5);
-            let frame = Mariana_frames_andar_derc[i % Mariana_frames_andar_derc.length];
+            let frame = Mariana_frames_andar_izq[i % Mariana_frames_andar_izq.length];
             let scale = 1;
             ctx.drawImage(
-                this.mariana_img_derc,//this.mariana_img_izq,//
+                this.mariana_img,//this.mariana_img_izq,//
                 frame.origin.x,
                 frame.origin.y,
                 frame.size.x,//
@@ -111,18 +143,20 @@ export class Mariana extends Actor implements IActor {
             ctx.fillRect(0, 0, 10, 10);
         }
         ctx.restore();
-        this.frame_count += delta;// se ve a maraiana anda
-        let direction = 0;
-        if (this.speed != 0 && this.speed < 0) { direction = 180 }
+        this.frame_count += delta;// se ve a maraiana anda*/
+        //let direction = 0;
+        // if (this.speed != 0 && this.speed < 0) { direction = 180 }*/
     }
     keyboard_event(key: string) {
 
         if (key == "ArrowRight") {
             console.log("right");
+            this.speed = 10;
             this.origin.x = (this.origin.x + this.speed);
         } else if (key == "ArrowLeft") {
             console.log("left");
-            this.origin.x = (this.origin.x - this.speed);
+            this.speed = (-10);
+            this.origin.x = (this.origin.x + this.speed);
         } else if (key == "ArrowUp" && this.saltando == false) {
             console.log("Up");
             this.origin.y = 350
@@ -131,6 +165,7 @@ export class Mariana extends Actor implements IActor {
             console.log("Down");
         } else if (key == " ") {
             console.log("salta, hollaaaaa");
+            // this.speed = (-10);
             this.origin.y = (this.origin.y - this.speed);
             this.saltando = true
         }

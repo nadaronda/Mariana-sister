@@ -30,9 +30,12 @@ export class actorEvil extends Actor implements IActor {
 
         let myPos = this.origin;
         let distance = Math.sqrt(Math.pow(myPos.x - this.actor.origin.x, 2) + Math.pow(myPos.y - this.actor.origin.y, 2));
-        console.log(distance);
+        //console.log(distance);
         //console.log(actorPos);
-        if (distance <= 26 /*&& this.actor.origin.y >= 380*/) { alert(" Game Over ") }//distancia que chocan 26
+        if (distance <= 26 /*&& this.actor.origin.y >= 380*/) {
+            alert(`GAME OVER! Pulsa "Aceptar" para volver a empezar.`);
+            location.reload();
+        }//distancia que chocan 26
     }
     keyboard_event() { }
     draw(delta: number, ctx: CanvasRenderingContext2D) {
@@ -40,7 +43,7 @@ export class actorEvil extends Actor implements IActor {
             //Movimiento Andar a la derecho
             { origin: { x: 0, y: 5 }, size: { x: 60, y: 50 } },// 1ºPOSICION
             { origin: { x: 66, y: 5 }, size: { x: 60, y: 50 } },//2ºPOSICION
-            //{ origin: { x: 128, y: 5 }, size: { x: 60, y: 50 } },//3ºPOSICION
+            //{ origin: { x: 128, y: 5 }, size: { x: 60, y: 50 } },//3ºPOSICION goomba aplastrado
 
         ];
         if (this.origin.x > 0 || this.origin.x < 500) {

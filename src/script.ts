@@ -51,15 +51,6 @@ window.onload = () => {
         actors.forEach((actor) => { actor.keyboard_event(e.key) });
     });
 
-    /*document.body.addEventListener("keydown", (e) => {
-        // console.log(e.key);
-        actors.forEach((actor) => {
-            if (actor.keyboard_event_down) {
-                actor.keyboard_event_down(e.key);
-            }
-        });
-    });*/
-
     document.body.addEventListener("keyup", (e) => {
         // console.log(e.key);
         actors.forEach((actor) => {
