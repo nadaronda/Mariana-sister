@@ -1,6 +1,8 @@
 import { IActor, Actor, Size } from "./types/Actor";
 import { Point } from "./types/Point"
+import { checkLimits } from "./types/checkLimits";//buscar para que vale
 import Mariana_sprites_derecha from "../img/andar_derc.png";
+//import Mariana_sprites_izquierda from "../img/andar_izq.png";
 export class Mariana extends Actor implements IActor {
     origin: Point;
     color: string;
@@ -8,6 +10,7 @@ export class Mariana extends Actor implements IActor {
     saltando: boolean;
     altura: number;
     mariana_img_derc: HTMLImageElement;//preguntar public
+    //mariana_img_izq: HTMLImageElement;
     frame_count = 0;
     constructor({ initialPos, color = "purple", speed = 10 }: { initialPos: Point; color?: string; speed?: number; }) {
         super();
@@ -19,6 +22,8 @@ export class Mariana extends Actor implements IActor {
         this.frame_count = 0;
         this.mariana_img_derc = new Image();
         this.mariana_img_derc.src = Mariana_sprites_derecha;
+        //this.mariana_img_izq = new Image();
+        //this.mariana_img_izq.src = Mariana_sprites_izquierda;
 
     }
     update(delta: number) {
@@ -45,15 +50,11 @@ export class Mariana extends Actor implements IActor {
             this.origin.y = 470
             this.saltando = false
             this.origin.y = 384// altura a la que se situa la linea del suelo
-        }// funciona no borrar*/
-
+        }
 
     }
-    /*initialize() {
-        //creamos una imagen
-
-        this.mariana_img.onload = () => { console.log("imagen cargada") }
-    }*/
+    initialize() {
+    }
 
 
     draw(delta: number, ctx: CanvasRenderingContext2D) {
@@ -77,7 +78,7 @@ export class Mariana extends Actor implements IActor {
             let frame = Mariana_frames_andar_derc[i % Mariana_frames_andar_derc.length];
             let scale = 1;
             ctx.drawImage(
-                this.mariana_img_derc,
+                this.mariana_img_derc,//.mariana_img_izq,//
                 frame.origin.x,
                 frame.origin.y,
                 frame.size.x,
@@ -94,10 +95,10 @@ export class Mariana extends Actor implements IActor {
             let frame = Mariana_frames_andar_derc[i % Mariana_frames_andar_derc.length];
             let scale = 1;
             ctx.drawImage(
-                this.mariana_img_derc,
+                this.mariana_img_derc,//this.mariana_img_izq,//
                 frame.origin.x,
                 frame.origin.y,
-                frame.size.x,
+                frame.size.x,//
                 frame.size.y,
                 this.origin.x,//variable x
                 this.origin.y,//variable Y mirar posicion que  le pongo en el map
@@ -111,6 +112,8 @@ export class Mariana extends Actor implements IActor {
         }
         ctx.restore();
         this.frame_count += delta;// se ve a maraiana anda
+        let direction = 0;
+        if (this.speed != 0 && this.speed < 0) { direction = 180 }
     }
     keyboard_event(key: string) {
 
@@ -139,6 +142,7 @@ export class Mariana extends Actor implements IActor {
                 break;
         }
     }
+
 }
 
 
