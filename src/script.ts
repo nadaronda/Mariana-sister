@@ -3,6 +3,7 @@ import { Point } from "./types/Point";
 import { FPSviewer } from "./FPSviewer";
 import { Mariana } from "./Mariana";
 import { actorEvil } from "./actorEvil";
+import { tortuga } from "./tortuga";
 import { Map } from "../src/Map";
 window.onload = () => {
 
@@ -20,14 +21,13 @@ window.onload = () => {
         fps,
         mariana,
         new actorEvil({ x: 500, y: 410 }, "red", mariana),// malo
-
-        //new actorEvil({ x: 500, y: 490 }, "blue", mariana),// malo
+        new tortuga({ x: -150, y: 410 }, "red", mariana),
+        new actorEvil({ x: 410, y: 490 }, "blue", mariana),// malo
+        new tortuga({ x: -700, y: 410 }, "red", mariana),
         //new actorEvil({ x: 500, y: 490 }, "grey", speed = 0.5, mariana),// malo
     ];
     actors.forEach((a) => a.initialize && a.initialize());//para los sprites
     //tengo que crear un array de actores evil donde les meto el actor mariana 
-
-
     //bucle de renderizado
     let lastFrame = 0;
     const render = (time: number) => {
@@ -37,9 +37,9 @@ window.onload = () => {
         actors.forEach(e => e.update(delta));
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         actors.forEach((e) => {
-            ctx.save();//add
+            ctx.save();
             e.draw(delta, ctx);
-            ctx.restore();//add
+            ctx.restore();
         });
 
         window.requestAnimationFrame(render);
