@@ -60,7 +60,8 @@ Va a merecer la pena poder emplearle tiempo!!
 ## 7. Tabla de contenidos o índice:
 * Personajes:
     * Mariana 
-    * ...??
+    * Goomba
+    * Tortuga
 ## 8. Manual de instalación y deployment:
 ```
 Clone the repository:
@@ -80,6 +81,38 @@ Execute the project:
 
 ``` 
 ## 9. Ejemplos de código:
+Para detectar las teclas que quieres utilizar y no sabes como las describe tu teclado copia esto en tu script, y en el html que se oberva al inspecionar la consola se vera con los console.log la tecla que estas pulsando y el nombre que contiene la tecla que pulsas:
+```js
+document.body.addEventListener("keydown", (e) => {
+console.log(e.key)
+});
+
+```
+He metido un condicional  switch para detectar las teclas de interres y que me devuelva con un console.log por la consola , lo que me interesa. 
+
+```js
+document.body.addEventListener("keydown", (e) => {
+console.log(e.key)
+ switch (e.key) {
+ case "ArrowRight":
+console.log("right");
+ break;
+ case "ArrowLeft":
+console.log("left");
+ break;
+ case "ArrowUp":
+ console.log("Up");
+ break;
+ case "ArrowDown":
+ console.log("Down");
+ break;
+ case " ":
+console.log("salta");
+ break;
+ } 
+ });
+```
+
 ## 10. Entornos de ejecución:
 * [Visual Studio Code](https://code.visualstudio.com/Download)
 ## Variables globales:
@@ -100,4 +133,11 @@ Execute the project:
 ## 13. Estadísticas:
 ## 14. Licencias
 ## 15. Agradecimientos:
+- En primer lugar agradecer a Core Code School por darme la oportunidad, a mis profesores : [Alvaro](https://github.com/Alvaro-Lucas), [Marc](https://github.com/boyander), [Marcos](https://github.com/amargopastor).
+- A mis compañeros por la ayuda recibida.
+- A mi gran amiga Morica, que hizo tolo lo posible para que me iniciara en este mundillo.
+- A mis compañeras de trabajo que me ayudaron a meterme en Core Code School: [Ana](https://github.com/anadiamaq), [Silvia](https://github.com/silconari)
 ## 16. Otras consideraciones:
+Frases motivadoras:
+- Tu esfuerzo valio, vale y valdrá la pena. Nunca pares, nunca te conformes. Hata que lo bueno sea lo mejor y lo mejor sea lo excelente.
+- El exito es la suma de pequeños esfuerzos repetidos día tras dias.
