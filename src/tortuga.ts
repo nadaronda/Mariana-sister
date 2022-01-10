@@ -30,7 +30,7 @@ export class tortuga extends Actor implements IActor {
 
         let myPos = this.origin;
         let distance = Math.sqrt(Math.pow(myPos.x - this.actor.origin.x, 2) + Math.pow(myPos.y - this.actor.origin.y, 2));
-        if (distance <= 26 /*&& this.actor.origin.y >= 380*/) {
+        if (distance <= 26) {
             alert(`GAME OVER! Pulsa "Aceptar" para volver a empezar.`);
             location.reload();
         }//distancia que chocan 26

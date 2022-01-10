@@ -9,16 +9,15 @@ export class actorEvil extends Actor implements IActor {
     saltando: boolean;
     altura?: number;
     actor: any;
-    goomba_img: HTMLImageElement;// definir que es
+    goomba_img: HTMLImageElement;
     frame_count = 0;
     constructor(initialPos: Point, color: string, actor: any/*cambiar el any*/) {
         super();
         this.origin = { x: initialPos.x, y: initialPos.y };
         this.color = color;
         this.speed = 1;
-        this.actor = actor;//add  this.origin = { x: initialPos.x, y: initialPos.y };de mi actor mariana
+        this.actor = actor;
         this.saltando = false;
-        //this.altura = 500;
         this.goomba_img = new Image();
         this.goomba_img.src = goomba_sprites;
     }
@@ -30,9 +29,8 @@ export class actorEvil extends Actor implements IActor {
 
         let myPos = this.origin;
         let distance = Math.sqrt(Math.pow(myPos.x - this.actor.origin.x, 2) + Math.pow(myPos.y - this.actor.origin.y, 2));
-        //console.log(distance);
-        //console.log(actorPos);
-        if (distance <= 26 /*&& this.actor.origin.y >= 380*/) {
+
+        if (distance <= 26) {
             alert(`GAME OVER! Pulsa "Aceptar" para volver a empezar.`);
             location.reload();
         }//distancia que chocan 26
@@ -43,6 +41,7 @@ export class actorEvil extends Actor implements IActor {
             //Movimiento Andar a la derecho
             { origin: { x: 0, y: 5 }, size: { x: 60, y: 50 } },// 1ºPOSICION
             { origin: { x: 66, y: 5 }, size: { x: 60, y: 50 } },//2ºPOSICION
+
             //{ origin: { x: 128, y: 5 }, size: { x: 60, y: 50 } },//3ºPOSICION goomba aplastrado
 
         ];
@@ -51,13 +50,13 @@ export class actorEvil extends Actor implements IActor {
             let frame = goomba_frames[i % goomba_frames.length];
             let scale = 1 / 2;
             ctx.drawImage(
-                this.goomba_img,//.mariana_img_izq,//
+                this.goomba_img,
                 frame.origin.x,
                 frame.origin.y,
                 frame.size.x,
                 frame.size.y,
                 this.origin.x,//variable x
-                this.origin.y,// variable de la y para mover a Mariana al dsuelo
+                this.origin.y,// variable de la y 
                 frame.size.x * scale,
                 frame.size.y * scale
             );
@@ -68,13 +67,13 @@ export class actorEvil extends Actor implements IActor {
             let frame = goomba_frames[i % goomba_frames.length];
             let scale = 1 / 2;
             ctx.drawImage(
-                this.goomba_img,//this.mariana_img_izq,//
+                this.goomba_img,
                 frame.origin.x,
                 frame.origin.y,
                 frame.size.x,//
                 frame.size.y,
                 this.origin.x,//variable x
-                this.origin.y,//variable Y mirar posicion que  le pongo en el map
+                this.origin.y,//variable Y 
                 frame.size.x * scale,
                 frame.size.y * scale
             );
@@ -86,12 +85,4 @@ export class actorEvil extends Actor implements IActor {
         ctx.restore();
         this.frame_count += delta;// se ve a maraiana anda
     }
-
-    //---------------------------
-    /* let origin = this.origin;//add salto
-     ctx.fillStyle = this.color;
-     ctx.fillRect(origin.x, origin.y, 10, 10);*/
-    // Controlamos la dirección del Mariana
-    //let direction = 0;
-    //if (this.speed.x != 0 && this.speed.x < 0) {direction = 180}
 }

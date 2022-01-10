@@ -2,15 +2,13 @@ import { IActor, Actor, Size } from "./types/Actor";
 import { Point } from "./types/Point"
 import { checkLimits } from "./types/checkLimits";//buscar para que vale
 import Mariana_sprites from "../img/andar.png";
-//import Mariana_sprites_izquierda from "../img/andar_izq.png";
 export class Mariana extends Actor implements IActor {
     origin: Point;
     color: string;
     speed: number;
     saltando: boolean;
     altura: number;
-    mariana_img: HTMLImageElement;//preguntar public
-    //mariana_img_izq: HTMLImageElement;
+    mariana_img: HTMLImageElement;
     frame_count = 0;
     constructor({ initialPos, color = "purple", speed = 10 }: { initialPos: Point; color?: string; speed?: number; }) {
         super();
@@ -22,14 +20,10 @@ export class Mariana extends Actor implements IActor {
         this.frame_count = 0;
         this.mariana_img = new Image();
         this.mariana_img.src = Mariana_sprites;
-        //this.mariana_img_izq = new Image();
-        //this.mariana_img_izq.src = Mariana_sprites_izquierda;
-
     }
     update(delta: number) {
         let newPosX = this.origin.x;
         if (newPosX < 490 && newPosX > 10) {
-            // this.speed = 10;
 
         }
         let newPosY = this.origin.y;
@@ -51,12 +45,12 @@ export class Mariana extends Actor implements IActor {
             this.saltando = false
             this.origin.y = 384// altura a la que se situa la linea del suelo
         }
+        if (this.origin.y == 310 && this.saltando == true) {
+            alert("a la te has pasado pulsando la tecla espacio, Mariana aprendio a volar")
+            location.reload();// altura a la que se situa la linea del suelo
+        }
 
     }
-    initialize() {
-    }
-
-
     draw(delta: number, ctx: CanvasRenderingContext2D) {
 
         const Mariana_frames_andar_derc = [
@@ -88,13 +82,13 @@ export class Mariana extends Actor implements IActor {
             let frame = Mariana_frames_andar_derc[i % Mariana_frames_andar_derc.length];
             let scale = 1;
             ctx.drawImage(
-                this.mariana_img,//.mariana_img_izq,//
+                this.mariana_img,
                 frame.origin.x,
                 frame.origin.y,
                 frame.size.x,
                 frame.size.y,
                 this.origin.x,//variable x
-                this.origin.y,// variable de la y para mover a Mariana al dsuelo
+                this.origin.y,// variable de la y 
                 frame.size.x * scale,
                 frame.size.y * scale
             );
@@ -113,39 +107,13 @@ export class Mariana extends Actor implements IActor {
                 frame.size.x,//
                 frame.size.y,
                 this.origin.x,//variable x
-                this.origin.y,//variable Y mirar posicion que  le pongo en el map
+                this.origin.y,//variable Y 
                 frame.size.x * scale,
                 frame.size.y * scale,
             )
             ctx.restore();
             this.frame_count += delta;
-
         }
-        /*if (this.mariana_img) {
-            // https://developer.mozilla.org/es/docs/Web/API/CanvasRenderingContext2D/drawImage
-            let i = Math.floor(this.frame_count * 5);
-            let frame = Mariana_frames_andar_izq[i % Mariana_frames_andar_izq.length];
-            let scale = 1;
-            ctx.drawImage(
-                this.mariana_img,//this.mariana_img_izq,//
-                frame.origin.x,
-                frame.origin.y,
-                frame.size.x,//
-                frame.size.y,
-                this.origin.x,//variable x
-                this.origin.y,//variable Y mirar posicion que  le pongo en el map
-                frame.size.x * scale,
-                frame.size.y * scale
-            );
-        } else {
-            // Draw the super mario actor
-            ctx.fillStyle = "red";
-            ctx.fillRect(0, 0, 10, 10);
-        }
-        ctx.restore();
-        this.frame_count += delta;// se ve a maraiana anda*/
-        //let direction = 0;
-        // if (this.speed != 0 && this.speed < 0) { direction = 180 }*/
     }
     keyboard_event(key: string) {
 
@@ -164,20 +132,19 @@ export class Mariana extends Actor implements IActor {
         } else if (key == "ArrowDown") {
             console.log("Down");
         } else if (key == " ") {
-            console.log("salta, hollaaaaa");
+            console.log("salta");
             // this.speed = (-10);
             this.origin.y = (this.origin.y - this.speed);
             this.saltando = true
         }
     }
-    keyboard_event_up(key: string) {//add
+    keyboard_event_up(key: string) {
         switch (key) {
             case " ":
                 console.log("saltando");
                 break;
         }
     }
-
 }
 
 
