@@ -75,7 +75,7 @@
 77C:\Users\rosar\Desktop\Mariana-sister\node_modules\svgo\plugins\cleanupIDs.js132856293180502635 0
 79C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\utils\src\urlJoin.js132856294315129012 0
 78C:\Users\rosar\Desktop\Mariana-sister\node_modules\lodash\_baseWrapperValue.js132856294468622839 0
-48C:\Users\rosar\Desktop\Mariana-sister\.gitignore132862310061706437 0
+48C:\Users\rosar\Desktop\Mariana-sister\.gitignore132862327552759532 0
 55C:\Users\rosar\Desktop\Mariana-sister\package-lock.json132856295841255490 0
 93C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-json\node_modules\.bin132856295766816189 1
 111C:\Users\rosar\Desktop\Mariana-sister\node_modules\postcss-modules-extract-imports\node_modules\chalk\readme.md132856293031183712 0
@@ -113,7 +113,7 @@
 90C:\Users\rosar\Desktop\Mariana-sister\node_modules\es-abstract\2017\OrdinaryToPrimitive.js132856295423173604 0
 59C:\Users\rosar\Desktop\Mariana-sister\node_modules\escalade132856293106579110 1
 97C:\Users\rosar\Desktop\Mariana-sister\node_modules\jsdom\lib\jsdom\living\generated\ShadowRoot.js132856294779690300 0
-42C:\Users\rosar\Desktop\Mariana-sister\dist132862324610366961 1
+42C:\Users\rosar\Desktop\Mariana-sister\dist132863051362483165 1
 82C:\Users\rosar\Desktop\Mariana-sister\node_modules\caniuse-lite\data\regions\CO.js132856294425584281 0
 72C:\Users\rosar\Desktop\Mariana-sister\node_modules\util\support\types.js132856292974079094 0
 122C:\Users\rosar\Desktop\Mariana-sister\node_modules\postcss-modules-extract-imports\node_modules\postcss\lib\lazy-result.js132856293379456206 0
@@ -174,7 +174,7 @@
 81C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\utils\lib\TapStream.js132856294229415026 0
 87C:\Users\rosar\Desktop\Mariana-sister\node_modules\string.prototype.trimstart\.eslintrc132856292935735480 0
 85C:\Users\rosar\Desktop\Mariana-sister\node_modules\highlight.js\styles\foundation.css132856293615183997 0
-47C:\Users\rosar\Desktop\Mariana-sister\README.md132862311165518876 0
+47C:\Users\rosar\Desktop\Mariana-sister\README.md132863043404265785 0
 81C:\Users\rosar\Desktop\Mariana-sister\node_modules\typescript\loc\lcl\TRK\Targets132856295555420185 1
 96C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\transformer-raw\src\RawTransformer.js132856292956235454 0
 89C:\Users\rosar\Desktop\Mariana-sister\node_modules\es-abstract\2017\ArraySpeciesCreate.js132856293928552367 0
@@ -241,7 +241,7 @@
 84C:\Users\rosar\Desktop\Mariana-sister\node_modules\jsdom\lib\jsdom\browser\resources132856293329084030 1
 57C:\Users\rosar\Desktop\Mariana-sister\node_modules\@babel132856292680285925 1
 91C:\Users\rosar\Desktop\Mariana-sister\node_modules\stream-http\node_modules\readable-stream132856293426820662 1
-54C:\Users\rosar\Desktop\Mariana-sister\src\actorEvil.ts132862311166188882 0
+54C:\Users\rosar\Desktop\Mariana-sister\src\actorEvil.ts132863043869547687 0
 68C:\Users\rosar\Desktop\Mariana-sister\node_modules\path-key\index.js132856292891287515 0
 77C:\Users\rosar\Desktop\Mariana-sister\node_modules\har-validator\lib\error.js132856292948185465 0
 69C:\Users\rosar\Desktop\Mariana-sister\node_modules\uncss\src\jsdom.js132856292924525497 0
@@ -261,7 +261,7 @@
 80C:\Users\rosar\Desktop\Mariana-sister\node_modules\object-keys\implementation.js132856293058108817 0
 92C:\Users\rosar\Desktop\Mariana-sister\node_modules\type-fest\source\require-exactly-one.d.ts132856293505932924 0
 82C:\Users\rosar\Desktop\Mariana-sister\node_modules\core-js\features\number\virtual132856295723416235 1
-52C:\Users\rosar\Desktop\Mariana-sister\src\Mariana.ts132862311165988887 0
+52C:\Users\rosar\Desktop\Mariana-sister\src\Mariana.ts132863051557311099 0
 80C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\optimizer-cssnano\src132856292950405465 1
 97C:\Users\rosar\Desktop\Mariana-sister\node_modules\escodegen\node_modules\source-map\CHANGELOG.md132856293247957812 0
 82C:\Users\rosar\Desktop\Mariana-sister\node_modules\uri-js\dist\esnext\index.js.map132856293405365530 0
@@ -3505,7 +3505,7 @@
 67C:\Users\rosar\Desktop\Mariana-sister\node_modules\uncss\src\lib.js132856292957815463 0
 66C:\Users\rosar\Desktop\Mariana-sister\node_modules\.bin\sshpk-sign132856295769286188 0
 81C:\Users\rosar\Desktop\Mariana-sister\node_modules\lodash\_baseMatchesProperty.js132856294108906793 0
-61C:\Users\rosar\Desktop\Mariana-sister\dist\andar.a7e56521.png132862312073662610 0
+61C:\Users\rosar\Desktop\Mariana-sister\dist\andar.a7e56521.png132863050184940805 0
 86C:\Users\rosar\Desktop\Mariana-sister\node_modules\fast-glob\out\providers\provider.js132856293264453014 0
 69C:\Users\rosar\Desktop\Mariana-sister\node_modules\parse-asn1\asn1.js132856292891357521 0
 76C:\Users\rosar\Desktop\Mariana-sister\node_modules\core-util-is\package.json132856292949815467 0
@@ -6610,7 +6610,7 @@
 80C:\Users\rosar\Desktop\Mariana-sister\node_modules\object-inspect\test\number.js132856293384436191 0
 78C:\Users\rosar\Desktop\Mariana-sister\node_modules\postcss-reduce-initial\data132856293016704232 1
 77C:\Users\rosar\Desktop\Mariana-sister\node_modules\htmlnano\docs\netlify.toml132856293711293899 0
-62C:\Users\rosar\Desktop\Mariana-sister\dist\goomba.1c3275a7.png132862312073652603 0
+62C:\Users\rosar\Desktop\Mariana-sister\dist\goomba.1c3275a7.png132863050184940805 0
 83C:\Users\rosar\Desktop\Mariana-sister\node_modules\generic-names\.idea\dictionaries132856293115938767 1
 81C:\Users\rosar\Desktop\Mariana-sister\node_modules\es-abstract\2016\InLeapYear.js132856295306373677 0
 94C:\Users\rosar\Desktop\Mariana-sister\node_modules\entities\lib\generated\decode-data-xml.d.ts132856293412160671 0
@@ -16482,7 +16482,7 @@
 125C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-node-modules132856293212702596 0
 94C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\test\fixtures\config\.parcelrc132856293151357499 0
 94C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\test\fixtures\config\subfolder132856293183392633 1
-67C:\Users\rosar\Desktop\Mariana-sister\dist\fondo_mario.67aa5d89.jpg132862312073652603 0
+67C:\Users\rosar\Desktop\Mariana-sister\dist\fondo_mario.67aa5d89.jpg132863050184940805 0
 112C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\test\fixtures\common-targets-ignore\package.json132856294604102598 0
 110C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\test\fixtures\application-targets\package.json132856294601682598 0
 84C:\Users\rosar\Desktop\Mariana-sister\node_modules\@parcel\core\src\applyRuntimes.js132856293269112960 0
@@ -17012,11 +17012,11 @@
 51C:\Users\rosar\Desktop\Mariana-sister\img\andar.png132861347994384213 0
 52C:\Users\rosar\Desktop\Mariana-sister\img\goomba.png132861103988063692 0
 53C:\Users\rosar\Desktop\Mariana-sister\img\tortuga.png132862198363393432 0
-60C:\Users\rosar\Desktop\Mariana-sister\dist\index.abe0c6a4.js132862324610176979 0
-64C:\Users\rosar\Desktop\Mariana-sister\dist\index.abe0c6a4.js.map132862324610336969 0
-61C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css132862312073652603 0
-65C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css.map132862312074102615 0
+60C:\Users\rosar\Desktop\Mariana-sister\dist\index.abe0c6a4.js132863051362363157 0
+64C:\Users\rosar\Desktop\Mariana-sister\dist\index.abe0c6a4.js.map132863051362473168 0
+61C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css132863050184950810 0
+65C:\Users\rosar\Desktop\Mariana-sister\dist\index.de101254.css.map132863050186410809 0
 53C:\Users\rosar\Desktop\Mariana-sister\dist\index.html132862312073652603 0
-63C:\Users\rosar\Desktop\Mariana-sister\dist\tortuga.a7360c72.png132862323876014415 0
+63C:\Users\rosar\Desktop\Mariana-sister\dist\tortuga.a7360c72.png132863050184950810 0
 59C:\Users\rosar\Desktop\Mariana-sister\.vscode\settings.json132856267270245433 0
 60C:\Users\rosar\Desktop\Mariana-sister\.github\ISSUE_TEMPLATE132856267267245436 1
