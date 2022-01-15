@@ -3,66 +3,38 @@
 - [Mi primer proyecto de Core Code School](#mi-primer-proyecto-de-core-code-school)
 - [Indice:](#indice)
   - [1. Título del Juego:](#1-título-del-juego)
-  - [2. Indicación de las tecnologías empleadas:](#2-indicación-de-las-tecnologías-empleadas)
-  - [3. Imágenes y vídeos:](#3-imágenes-y-vídeos)
-  - [4. Motivación del proyecto:](#4-motivación-del-proyecto)
-  - [5. Estructura del proyecto:](#5-estructura-del-proyecto)
-  - [6. Acceso directo al juego:](#6-acceso-directo-al-juego)
-  - [7. Tabla de contenidos o índice:](#7-tabla-de-contenidos-o-índice)
-  - [8. Manual de instalación y deployment:](#8-manual-de-instalación-y-deployment)
-  - [9. Ejemplos de código:](#9-ejemplos-de-código)
-  - [10. Entornos de ejecución:](#10-entornos-de-ejecución)
-  - [Variables globales:](#variables-globales)
-  - [12. Listado de paquetes y dependencias:](#12-listado-de-paquetes-y-dependencias)
-  - [13. Estadísticas:](#13-estadísticas)
-  - [14. Licencias](#14-licencias)
-  - [15. Agradecimientos:](#15-agradecimientos)
-  - [16. Otras consideraciones:](#16-otras-consideraciones)
-   
-  - [7. Tabla de contenidos o índice:](#7-tabla-de-contenidos-o-índice)
-  - [8. Manual de instalación y deployment:](#8-manual-de-instalación-y-deployment)
-  - [9. Ejemplos de código:](#9-ejemplos-de-código)
-  - [10. Entornos de ejecución:](#10-entornos-de-ejecución)
-  - [11. Variables globales:](#11-variables-globales)
-  - [12. Listado de paquetes y dependencias:](#12-listado-de-paquetes-y-dependencias)
-  - [13. Estadísticas:](#13-estadísticas)
-  - [14. Licencias](#14-licencias)
-  - [15. Agradecimientos:](#15-agradecimientos)
-  - [16. Otras consideraciones:](#16-otras-consideraciones)
+  - [2. Imágenes y vídeos:](#2-imágenes-y-vídeos)
+  - [3. Motivación del proyecto:](#3-motivación-del-proyecto)
+  - [4. Acceso directo al juego:](#4-acceso-directo-al-juego)
+  - [5. Tabla de contenidos o índice:](#5-tabla-de-contenidos-o-índice)
+  - [6. Manual de instalación y deployment:](#6-manual-de-instalación-y-deployment)
+  - [7. Ejemplos de código:](#7-ejemplos-de-código)
+  - [8. Entornos de ejecución:](#8-entornos-de-ejecución)
+  - [9. Listado de paquetes y dependencias:](#9-listado-de-paquetes-y-dependencias)
+  - [10. Agradecimientos:](#10-agradecimientos)
+  - [11. Otras consideraciones:](#11-otras-consideraciones)
 
 
 ## 1. Título del Juego:
 Mariana Sister
 
-## 2. Indicación de las tecnologías empleadas:
-
-## 3. Imágenes y vídeos:
+## 2. Imágenes y vídeos:
 ![Lo tradicional llama ](./img/super-mario-bros.jpg)
-## 4. Motivación del proyecto:
+## 3. Motivación del proyecto:
 La motivación vienen dada del tradicional juego de Super Mario Bros,
 siempre que he recordado un videojuego, me ha venido a la cabeza Mario Bross, he jugado bastante
 de pequeña y me trae bastantes buenos recuerdos. Ver que es posible poder crearlo desde cero, para mi sería un gran reto.
 
-Va a merecer la pena poder emplearle tiempo!!
+Va a merecer la pena poder emplearle tiempo, dedicación y esfuerzo!!
+## 4. Acceso directo al juego:
+[Pincha aquí para poder acceder](https://nadaronda.github.io/Mariana-sister/)
 
-## 5. Estructura del proyecto:
-## 6. Acceso directo al juego:
-* [Pincha aquí para poder acceder](https://nadaronda.github.io/Mariana-sister/)
-  
-* El juego de Mariana Sister se basa en el juego de Super Mario Bros, los comandos son los siguientes:
-  
-     - La flecha de derecha es para desplazarnos a la derecha.
-     - La flecha de izquierda es para desplazarnos a la izquierda.
-     - La flecha de arriba es para subir escaleras,o levantar brazos.(falta por hacer)
-     - La flecha de abajo baja escalera y se agacha(falta por hacer).
-     - La barra de espacio se utiliza para saltar(En proceso).
-     - El objetivo del juego es llegar a la meta antes de que termine el tiempo definido en la esquina superior dercha(falta por hacer), sin que le maten.
-## 7. Tabla de contenidos o índice:
-* Personajes:
-    * Mariana 
-    * Goomba
-    * Tortuga
-## 8. Manual de instalación y deployment:
+## 5. Tabla de contenidos o índice:
+Personajes:
+* Mariana 
+* Goomba
+* Tortuga
+## 6. Manual de instalación y deployment:
 ```
 Clone the repository:
     git clone https://github.com/nadaronda/Mariana-sister
@@ -80,7 +52,7 @@ Execute the project:
     npm run dev
 
 ``` 
-## 9. Ejemplos de código:
+## 7. Ejemplos de código:
 Para detectar las teclas que quieres utilizar y no sabes como las describe tu teclado copia esto en tu script, y en el html que se oberva al inspecionar la consola se vera con los console.log la tecla que estas pulsando y el nombre que contiene la tecla que pulsas:
 ```js
 document.body.addEventListener("keydown", (e) => {
@@ -88,7 +60,7 @@ console.log(e.key)
 });
 
 ```
-He metido un condicional  switch para detectar las teclas de interres y que me devuelva con un console.log por la consola , lo que me interesa. 
+He metido un condicional  switch para detectar las teclas de interes y que me devuelva con un console.log por la consola, lo que me interesa. 
 
 ```js
 document.body.addEventListener("keydown", (e) => {
@@ -113,31 +85,25 @@ console.log("salta");
  });
 ```
 
-## 10. Entornos de ejecución:
+## 8. Entornos de ejecución:
 * [Visual Studio Code](https://code.visualstudio.com/Download)
-## Variables globales:
-
-## 12. Listado de paquetes y dependencias:
+  
+## 9. Listado de paquetes y dependencias:
 * Node package manager: [npm](https://www.npmjs.com/)
 * To run the HTML: [parcel](https://www.npmjs.com/package/parcel ), [más información](https://parceljs.org/languages/javascript/#classic-scripts)
 
 *  Lenguajes de programación: [typescript](https://www.npmjs.com/package/typescript)
 *  Otros paquetes de Node: [rimraf](https://www.npmjs.com/package/rimraf), [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
 * MDN [Api Canvas](https://developer.mozilla.org/es/docs/Web/API/Canvas_API)
-* Css [Información sobre el Modelo de cajas Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-    * Como aprender de manera divertida el modelo de cajas [Juego](https://flexboxfroggy.com/)
-* [Pincha aquí para crear sprite personalizados](https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Humanlike_white)
+* Css [Información sobre el Modelo de cajas Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  [Juego](https://flexboxfroggy.com/)
+* [Sprite personalizados](https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Humanlike_white)
 
-
-
-## 13. Estadísticas:
-## 14. Licencias
-## 15. Agradecimientos:
-- En primer lugar agradecer a Core Code School por darme la oportunidad, a mis profesores : [Alvaro](https://github.com/Alvaro-Lucas), [Marc](https://github.com/boyander), [Marcos](https://github.com/amargopastor).
+## 10. Agradecimientos:
+- En primer lugar agradecer a Core Code School por darme la oportunidad, a mis profesores : [Alvaro](https://github.com/Alvaro-Lucas), [Marc](https://github.com/boyander), [Marcos](https://github.com/amargopastor) en especial por la gran dedicación y esfuerzo que nos dedica cada día.
 - A mis compañeros por la ayuda recibida.
-- A mi gran amiga Morica, que hizo tolo lo posible para que me iniciara en este mundillo.
+- A mi gran amiga [Monica](https://github.com/MonicaMerino), que hizo todo lo posible para que me iniciara en este mundillo.
 - A mis compañeras de trabajo que me ayudaron a meterme en Core Code School: [Ana](https://github.com/anadiamaq), [Silvia](https://github.com/silconari)
-## 16. Otras consideraciones:
+## 11. Otras consideraciones:
 Frases motivadoras:
 - Tu esfuerzo valio, vale y valdrá la pena. Nunca pares, nunca te conformes. Hata que lo bueno sea lo mejor y lo mejor sea lo excelente.
 - El exito es la suma de pequeños esfuerzos repetidos día tras dias.
