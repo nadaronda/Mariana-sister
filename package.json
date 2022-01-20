@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "![Lo tradicional llama ](super-mario-bros.jpg)\r ## Motivación del proyecto:\r La motivación vienen dada del tradicional juego de Super Mario Bros,\r siempre que he recordado un videojuego, me ha venido a la cabeza Mario Bross, he jugado bastante\r de pequeña y trae bastantes buenos recuerdos. Ver que es posible poder crearlo desde cero, para mi va a ser una gran meta, \r pero a su vez va a merecer la pena poder emplearle tiempo y a su vez aprender de ello.",
   "scripts": {
+    "test": "echo\"  Error: no test specifies\" &&exit 1",
     "dev": "parcel index.html",
     "build": "npm run clean && npm run ghbuild",
     "ghbuild": "parcel build --dist-dir docs --public-url /Mariana-sister index.html",
-    "clean": "rimraf docs dist"
+    "clean": "rimraf docs dist",
+    "start": "parcel serve -p $PORT index.html"
   },
   "repository": {
     "type": "git",
